@@ -33,10 +33,20 @@ label {
 }
 
 input {
-    background: transparent;
+    background: transparent !important;
     border: none;
     font-size: 1em;
     padding: 0.5em;
+    outline: none;
+}
+
+input:focus {
+    background: transparent !important;
+    outline: none;
+}
+
+input:active {
+    background: transparent !important;
     outline: none;
 }
 
@@ -45,7 +55,7 @@ input {
 }
 
 .email-password input {
-    width: 100%;
+    width: 96%;
     margin-top: 10px;
 }
 
@@ -79,6 +89,12 @@ button {
 button:hover {
     background-color: #fff;
     color: #0d21d6;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
 }
 
 @media (max-width: 600px) {
